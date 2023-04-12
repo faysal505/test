@@ -6,8 +6,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with open("data.txt", 'w') as f:
-        f.write("new")
     return "Welcome Page"
 @app.route("/home")
 def n():
