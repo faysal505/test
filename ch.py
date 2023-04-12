@@ -7,4 +7,8 @@ with open("data.txt", 'w') as f:
 
 @app.route('/')
 def home():
-    return "Welcome"
+    with open("data.txt", 'r') as f:
+        d = f.read()
+    return d
+
+app.run()
